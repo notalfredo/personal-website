@@ -40,7 +40,7 @@
                     <a href="https://www.uta.edu/">University of Texas at Arlington</a>
                 </p>
                 <br>
-                <p>Personal Email: icealfredo123[at]gmail[dot]com</p>
+                <p>Personal Email: alfredo.gutierrez.dev[at]gmail[dot]com</p>
                 <p>
                     <a href="https://github.com/notalfredo">GitHub</a> /
                     <a href="https://www.linkedin.com/in/alfredo-gutierrez-2a77181bb">LinkedIn</a>
@@ -79,24 +79,29 @@
 
         <h2 id="experience">Work Experience</h2>
 
-        <h3><a href="https://www.rmfg.com/">RMFG</a> — Full time Software Engineer
-            <span class="meta">Jan 2024 – Jul 2026</span>
-        </h3>
-        <h3><a href="https://www.rmfg.com/">RMFG</a> — Part time Software Engineer
-            <span class="meta">Jun 2023 – Dec 2023</span>
+        <h3><a href="https://www.rmfg.com/">RMFG</a> — Software Engineer
+            <span class="meta">Jun 2023 – Jul 2026</span>
         </h3>
         <div class="comment">/*
- *  Helped build an API driven metal fabrication shop. Work written
+ *  Helped build an API driven sheet metal fabrication startup. Work written
  *  primarily in C++ and Rust. <a href="portfolio.html">(Link to portfolio)</a>
  *
- *  - Built a sheet metal unfolding engine (C++, OpenCASCADE) that auto detects flat and bent
- *    parts, unfolds them, and generates DXF flat patterns.
- *  - Built an auto nester and a camera driven nester (Rust): the cutting bed is photographed,
- *    remnant sheets are detected with a trained ML model, and parts are nested around the
- *    material already on the sheet.
- *  - Generated cutting machine G code with kerf compensation, lead ins, and micro joints.
- *  - Auto detected part features such as holes, countersinks, and weld paths on assemblies.
- *  - Supported editing part thickness and bend radius to match manufacturing needs.
+ *  - Replaced a manual quoting team by building the C++/OpenCASCADE engine behind an online
+ *    quoter: it unfolds STEP sheet metal parts and detects features (holes, countersinks,
+ *    weld seams) to price a part instantly, taking quotes from hours to seconds at hundreds
+ *    a day.
+ *  - Eliminated the need for a dedicated CAD team by automating STEP part prep (C++,
+ *    OpenCASCADE): weld seam detection, bend and corner reliefs, hole correction, shape
+ *    repair, and thickness / bend radius regeneration.
+ *  - Built a No-Fit-Polygon nesting engine (Rust) that maximizes sheet utilization and emits
+ *    CNC G code (kerf compensation, lead ins, micro joints), saving thousands per week by
+ *    reusing remnant material.
+ *  - Built the camera nester's computer vision pipeline (Python, OpenCV): a ceiling camera
+ *    photographs the cutting bed and a trained Roboflow model detects leftover metal, so
+ *    parts nest onto real scrap instead of new sheets.
+ *  - Built shop floor tools (Next.js / TypeScript) that turn specialist CAD/CAM work into
+ *    simple, guided steps, lowering the barrier to entry so technicians could run operations
+ *    and earn higher pay.
  */</div>
 
         <h3>UTA Undergraduate Theoretical CS Teaching Assistant
@@ -115,24 +120,28 @@
                 <a href="https://ieeexplore.ieee.org/abstract/document/10538977">(Paper link)</a>
             </span>
         </h3>
-        <div class="comment">// Researched the feasibility of packing classification using hardware performance counters.</div>
+        <div class="comment">// Researched malware packing classification using hardware performance counters; trained ML
+// classifiers in Python on a labeled dataset, co-authoring a published IEEE paper.</div>
 
         <h2 id="projects">Projects</h2>
 
         <h3>OpenKittenCAD
-            <span class="meta">Spring 2024 – Current
+            <span class="meta">Jan 2024 – May 2024
                 <a href="https://github.com/notalfredo/OpenKittenCAD">(GitHub Repo)</a>
             </span>
         </h3>
-        <div class="comment">// Hobby CodeCAD with "traditional" CAD features similar to that of OpenSCAD. Additionally
-// working on generating CAD to code.</div>
+        <div class="comment">// Open source CodeCAD application (C++) that compiles part definitions written in code into 3D
+// solid geometry through an OpenCASCADE kernel. Custom scripting language (.kts) with functions,
+// typed parameters, and a pipe operator, parsed by a Flex/Bison front end.</div>
 
         <h3>Knell Labs Graphics Educational Aid
             <span class="meta">Summer 2023 – Fall 2023
                 <a href="https://github.com/Knell-Labs/knell-graphics-educational-aid">(GitHub Repo)</a>
             </span>
         </h3>
-        <div class="comment">// My senior design project: an open source 3D modeling software akin to Blender.</div>
+        <div class="comment">// Senior design project built with a small team: an open source, browser based 3D modeling tool
+// akin to Blender. Implemented in browser 3D modeling, rendering, and STL export with React Three
+// Fiber (Three.js).</div>
 
         <h2>Open Source Contributions</h2>
         <h3>KittyCAD
@@ -156,7 +165,7 @@
 
     <footer class="site-footer" id="contact">
         <div class="wrap">
-            Alfredo Gutierrez — icealfredo123[at]gmail[dot]com —
+            Alfredo Gutierrez — alfredo.gutierrez.dev[at]gmail[dot]com —
             <a href="https://github.com/notalfredo">GitHub</a> /
             <a href="https://www.linkedin.com/in/alfredo-gutierrez-2a77181bb">LinkedIn</a>
         </div>
